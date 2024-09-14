@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplayer Technical Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Multiplayer Technical Game</h1>
+        
+        <!-- Join Game Section -->
+        <div id="join-game-section">
+            <input type="text" id="player-name" placeholder="Enter your name" required>
+            <button id="join-game">Join Game</button>
+        </div>
+
+        <!-- Player List -->
+        <h2>Players:</h2>
+        <ul id="player-list"></ul> <!-- List to display connected players -->
+
+        <!-- Problem Description and Answer Section -->
+        <div id="game-section">
+            <h3>Problem:</h3>
+            <p id="problem-description"></p>
+            <input type="text" id="problem-answer" placeholder="Enter your answer">
+            <button id="submit-answer">Submit Answer</button>
+        </div>
+
+        <!-- Player Health Display -->
+        <h3 id="player-health">Your Health: 200%</h3>
+
+        <!-- Special Effects -->
+        <div id="special-effects"></div>
+
+        <!-- Game Messages -->
+        <h3>Game Messages:</h3>
+        <div id="game-messages"></div> <!-- Section to display game messages -->
+
+        <!-- Gun Selection -->
+        <div id="gun-selection">
+            <button id="gun1">Gun 1 (5% damage)</button>
+            <button id="gun2">Gun 2 (15% damage)</button>
+            <button id="gun3">Gun 3 (35% damage)</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
