@@ -1,7 +1,7 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
-const WebSocket = require('ws');
+const WebSocket = require('wss');
 
 // Create an HTTP server
 const server = http.createServer((req, res) => {
