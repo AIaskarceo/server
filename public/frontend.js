@@ -1,7 +1,7 @@
 // public/frontend.js
 
 const socket = io();
-
+const qustiondisp = document.getElementById("question-display")
 // Arrays of questions for each gun (difficulty level)
 const easyQuestions = [
     "What is the output of 2+2 in JavaScript?",
@@ -33,6 +33,7 @@ function displayQuestion(gunType) {
 
     if (gunType === 'easy') {
         questionText = getRandomQuestion(easyQuestions);
+        qustiondisp.textContent=questionText;
     } else if (gunType === 'moderate') {
         questionText = getRandomQuestion(moderateQuestions);
     } else if (gunType === 'tough') {
