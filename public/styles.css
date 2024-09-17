@@ -1,0 +1,115 @@
+/* public/styles.css */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.game-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+#players-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.player {
+    border-radius: 12px;
+    padding: 15px;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    width: 120px;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.player:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+#gun-selection {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.gun-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.gun-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+#input-area {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+#solution {
+    padding: 10px;
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#submit {
+    padding: 10px 20px;
+    background: #ff4b1f;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#submit:hover {
+    background: #ff9068;
+    transform: scale(1.05);
+}
+
+#target-select {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    width: 60%;
+}
