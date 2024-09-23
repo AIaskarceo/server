@@ -21,7 +21,7 @@ function App() {
   const [connected, setConnected] = useState(false);
 
   useEffect(() => {
-    const ws = new WebSocket('ws://localhost:3001');
+    const ws = new WebSocket('wss://https://server-1-rk6g.onrender.com');
 
     ws.onopen = () => {
       setConnected(true);
@@ -53,7 +53,7 @@ function App() {
 
   const handleShoot = (targetPlayerId: string, gunDamage: number) => {
     if (connected) {
-      const ws = new WebSocket('ws://localhost:3001');
+      const ws = new WebSocket('wss://https://server-1-rk6g.onrender.com');
       const message: Message = {
         type: 'shoot',
         targetPlayerId,
